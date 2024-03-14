@@ -20,10 +20,7 @@ namespace AirTicketBookingSystem.GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            AirTicketEntities dbContext = new AirTicketEntities();
-            IFlightRepository flightRepository = new FlightRepository(dbContext);
-            FlightManager flightManager = new FlightManager(flightRepository);
-            Application.Run(new MainForm(flightManager));
+            Application.Run(new MainForm());
         }
     }
 }

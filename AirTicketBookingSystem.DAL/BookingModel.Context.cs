@@ -13,10 +13,10 @@ namespace AirTicketBookingSystem.DAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AirTicketEntities : DbContext
+    public partial class AirticketBookingDatabaseEntities : DbContext
     {
-        public AirTicketEntities()
-            : base("name=AirTicketEntities")
+        public AirticketBookingDatabaseEntities()
+            : base("name=AirticketBookingDatabaseEntities")
         {
         }
     
@@ -33,6 +33,7 @@ namespace AirTicketBookingSystem.DAL
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Route> Routes { get; set; }
         public virtual DbSet<Schedule> Schedules { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }

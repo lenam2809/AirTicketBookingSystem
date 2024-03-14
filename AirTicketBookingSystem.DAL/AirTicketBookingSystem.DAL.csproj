@@ -51,87 +51,81 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aircraft.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Airport.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AirTicketModel.Context.cs">
+    <Compile Include="BookingModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AirTicketModel.Context.tt</DependentUpon>
+      <DependentUpon>BookingModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="AirTicketModel.cs">
+    <Compile Include="BookingModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AirTicketModel.Designer.cs">
+    <Compile Include="BookingModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AirTicketModel.edmx</DependentUpon>
+      <DependentUpon>BookingModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="CabinType.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Country.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTOs\AircraftDTO.cs" />
-    <Compile Include="DTOs\AirportsDTO.cs" />
-    <Compile Include="DTOs\CabinTypesDTO.cs" />
-    <Compile Include="DTOs\CountryDTO.cs" />
-    <Compile Include="DTOs\FlightDetailDTO.cs" />
-    <Compile Include="DTOs\PassengerDTO.cs" />
     <Compile Include="Office.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AirportRepository.cs" />
-    <Compile Include="Repositories\CabinTypeRepository.cs" />
-    <Compile Include="Repositories\CountryRepository.cs" />
-    <Compile Include="Repositories\FlightRepository.cs" />
-    <Compile Include="Repositories\TicketRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Role.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Route.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Schedule.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Ticket.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>AirTicketModel.tt</DependentUpon>
+      <DependentUpon>BookingModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="AirTicketModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AirTicketModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="AirTicketModel.edmx.diagram">
-      <DependentUpon>AirTicketModel.edmx</DependentUpon>
-    </None>
     <None Include="App.Config" />
+    <EntityDeploy Include="BookingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BookingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BookingModel.edmx.diagram">
+      <DependentUpon>BookingModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AirTicketModel.Context.tt">
+    <Content Include="BookingModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AirTicketModel.edmx</DependentUpon>
-      <LastGenOutput>AirTicketModel.Context.cs</LastGenOutput>
+      <DependentUpon>BookingModel.edmx</DependentUpon>
+      <LastGenOutput>BookingModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="AirTicketModel.tt">
+    <Content Include="BookingModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AirTicketModel.edmx</DependentUpon>
-      <LastGenOutput>AirTicketModel.cs</LastGenOutput>
+      <DependentUpon>BookingModel.edmx</DependentUpon>
+      <LastGenOutput>BookingModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
